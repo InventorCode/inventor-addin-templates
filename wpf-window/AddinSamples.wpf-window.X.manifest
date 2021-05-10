@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="AddinSamples.wpf-window" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{91ba0b06-1c68-4f6d-bc31-34bd69d4c3e3}" progid="WindowSample.StandardAddInServer" threadingModel="Both" name="WindowSample.StandardAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="AddinSamples.wpf-window.dll" hashalg="SHA1"></file>
+
+</assembly>
