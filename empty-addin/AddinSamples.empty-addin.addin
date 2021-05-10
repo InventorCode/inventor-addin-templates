@@ -1,0 +1,14 @@
+<Addin Type="Standard">
+  <!--Created for Autodesk Inventor Version 25.0-->
+  <ClassId>{c15f4e90-64fc-468e-8dcb-34f5cbcc4bfa}</ClassId>
+  <ClientId>{c15f4e90-64fc-468e-8dcb-34f5cbcc4bfa}</ClientId>
+  <DisplayName>AddinSamples.empty-addin</DisplayName>
+  <Description>An empty addin</Description>
+  <Assembly>AddinSamples.empty-addin.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>15..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>
