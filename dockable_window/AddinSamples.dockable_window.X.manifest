@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="dockable_window" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{865b427e-2bd2-4322-978d-45d873e32c6c}" progid="dockable_window.StandardAddInServer" threadingModel="Both" name="dockable_window.StandardAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="dockable_window.dll" hashalg="SHA1"></file>
+
+</assembly>

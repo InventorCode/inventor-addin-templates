@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-window", "wpf-window\wp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "empty-addin", "empty-addin\empty-addin.csproj", "{77773DFC-A2B0-4340-A8EA-DE54BEEE4D42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dockable_window", "dockable_window\dockable_window.csproj", "{14011920-922F-4864-B491-5A996269EF21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{77773DFC-A2B0-4340-A8EA-DE54BEEE4D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77773DFC-A2B0-4340-A8EA-DE54BEEE4D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77773DFC-A2B0-4340-A8EA-DE54BEEE4D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14011920-922F-4864-B491-5A996269EF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14011920-922F-4864-B491-5A996269EF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14011920-922F-4864-B491-5A996269EF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14011920-922F-4864-B491-5A996269EF21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
