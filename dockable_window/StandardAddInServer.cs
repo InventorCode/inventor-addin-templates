@@ -13,9 +13,10 @@ namespace dockable_window
     [GuidAttribute("865b427e-2bd2-4322-978d-45d873e32c6c")]
     public class StandardAddInServer : Inventor.ApplicationAddInServer
     {
+        private string ClientId = "{865b427e-2bd2-4322-978d-45d873e32c6c}";
+        private Application m_inventorApplication;
 
-        // Inventor application object.
-        private Inventor.Application m_inventorApplication;
+        private DockableWindow dockableWindow;
 
         public StandardAddInServer()
         {
@@ -25,15 +26,14 @@ namespace dockable_window
 
         public void Activate(Inventor.ApplicationAddInSite addInSiteObject, bool firstTime)
         {
-            // This method is called by Inventor when it loads the addin.
-            // The AddInSiteObject provides access to the Inventor Application object.
-            // The FirstTime flag indicates if the addin is loaded for the first time.
-
             // Initialize AddIn members.
             m_inventorApplication = addInSiteObject.Application;
 
-            // TODO: Add ApplicationAddInServer.Activate implementation.
-            // e.g. event initialization, command creation etc.
+            //Create dock able window
+            dockableWindow = m_inventorApplication.UserInterfaceManager.DockableWindows.Add(ClientId,
+                "docable_window.StandardAddInServer.dockableWindow", "Example");
+            dockableWindow.ShowVisibilityCheckBox = true;
+
         }
 
         public void Deactivate()
@@ -53,15 +53,15 @@ namespace dockable_window
 
         public void ExecuteCommand(int commandID)
         {
-            // Note:this method is now obsolete, you should use the 
+            // Note:this method is now obsolete, you should use the
             // ControlDefinition functionality for implementing commands.
         }
 
         public object Automation
         {
-            // This property is provided to allow the AddIn to expose an API 
+            // This property is provided to allow the AddIn to expose an API
             // of its own to other programs. Typically, this  would be done by
-            // implementing the AddIn's API interface in a class and returning 
+            // implementing the AddIn's API interface in a class and returning
             // that class object through this property.
 
             get
