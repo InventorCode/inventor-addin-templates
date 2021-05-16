@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "empty-addin", "empty-addin\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dockable_window", "dockable_window\dockable_window.csproj", "{14011920-922F-4864-B491-5A996269EF21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "empty-addin-sdk", "empty-addin-sdk\empty-addin-sdk.csproj", "{96CCDB6E-3E02-4A79-9618-9E7A396271EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{14011920-922F-4864-B491-5A996269EF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14011920-922F-4864-B491-5A996269EF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14011920-922F-4864-B491-5A996269EF21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
