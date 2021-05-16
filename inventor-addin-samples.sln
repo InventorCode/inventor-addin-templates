@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "empty-addin", "empty-addin\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dockable_window", "dockable_window\dockable_window.csproj", "{14011920-922F-4864-B491-5A996269EF21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "empty-addin-sdk", "empty-addin-sdk\empty-addin-sdk.csproj", "{96CCDB6E-3E02-4A79-9618-9E7A396271EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "empty-addin-sdk", "empty-addin-sdk\empty-addin-sdk.csproj", "{96CCDB6E-3E02-4A79-9618-9E7A396271EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmptyAddinSdkII", "EmptyAddinSdkII\EmptyAddinSdkII.csproj", "{9DDCE9D7-D25F-4261-9EE4-FB43C414E593}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DDCE9D7-D25F-4261-9EE4-FB43C414E593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DDCE9D7-D25F-4261-9EE4-FB43C414E593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DDCE9D7-D25F-4261-9EE4-FB43C414E593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DDCE9D7-D25F-4261-9EE4-FB43C414E593}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
