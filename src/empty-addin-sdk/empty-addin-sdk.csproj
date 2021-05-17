@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <Reference Include="Autodesk.Inventor.Interop">
-      <HintPath>..\packages\inventor\autodesk.inventor.interop.dll</HintPath>
+      <HintPath>..\..\packages\inventor\autodesk.inventor.interop.dll</HintPath>
     </Reference>
   </ItemGroup>
 
