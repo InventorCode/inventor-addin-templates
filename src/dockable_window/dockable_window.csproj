@@ -100,10 +100,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AddinSamples.dockable_window.X.manifest" />
+    <None Include="AddinSamples.dockable_window.X.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AddinSamples.dockable_window.addin" />
+    <None Include="AddinSamples.dockable_window.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.txt" />
@@ -124,7 +128,21 @@ if exist "%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x64\mt.exe" set var="%25P
 if exist "%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x86\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x86\mt.exe"
 if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x64\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x64\mt.exe"
 if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x86\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x86\mt.exe"
-call %25var%25 -manifest "$(ProjectDir)dockable_window.X.manifest" -outputresource:"$(TargetPath)";#2
+if exist "%25ProgramFiles%25\Microsoft SDKs\Windows\v6.0\bin\mt.exe" set var="%25ProgramFiles%25\Microsoft SDKs\Windows\v6.0\bin\mt.exe"
+if exist "%25ProgramFiles%25\Microsoft SDKs\Windows\v7.0\bin\mt.exe" set var="%25ProgramFiles%25\Microsoft SDKs\Windows\v7.0\bin\mt.exe"
+if exist "%25ProgramFiles%25\Microsoft SDKs\Windows\v6.0A\bin\mt.exe" set var="%25ProgramFiles%25\Microsoft SDKs\Windows\v6.0A\bin\mt.exe"
+if exist "%25ProgramFiles%25\Microsoft SDKs\Windows\v7.0A\bin\mt.exe" set var="%25ProgramFiles%25\Microsoft SDKs\Windows\v7.0A\bin\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Microsoft SDKs\Windows\v6.0A\bin\mt.exe" set var=%25PROGRAMFILES(x86)%25\Microsoft SDKs\Windows\v6.0A\bin\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Microsoft SDKs\Windows\v7.0A\bin\mt.exe" set var="%25PROGRAMFILES(x86)%25\Microsoft SDKs\Windows\v7.0A\bin\mt.exe" 
+if exist "%25PROGRAMFILES%25\Windows Kits\8.0\bin\x64\mt.exe" set var="%25PROGRAMFILES%25\Windows Kits\8.0\bin\x64\mt.exe"
+if exist "%25PROGRAMFILES%25\Windows Kits\8.0\bin\x86\mt.exe" set var="%25PROGRAMFILES%25\Windows Kits\8.0\bin\x86\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x64\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x64\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x86\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x86\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x64\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x64\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x86\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x86\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\10.0.19041.0\x64\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\10.0.19041.0\x64\mt.exe"
+
+call %25var%25 -manifest "$(ProjectDir)AddinSamples.dockable_window.X.manifest" -outputresource:"$(TargetPath)";#2
 XCopy "$(TargetPath)" "%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\" /Y /R
 XCopy "$(ProjectDir)AddinSamples.dockable_window.addin" "%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\" /Y /R   
 	</PostBuildEvent>
