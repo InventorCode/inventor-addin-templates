@@ -136,6 +136,8 @@ if exist "%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x64\mt.exe" set var="%25P
 if exist "%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x86\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\8.0\bin\x86\mt.exe"
 if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x64\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x64\mt.exe"
 if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x86\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x86\mt.exe"
+if exist "%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\10.0.19041.0\x64\mt.exe" set var="%25PROGRAMFILES(x86)%25\Windows Kits\10\bin\x86\mt.exe"
+
 call %25var%25 -manifest "$(ProjectDir)AddinSamples.wpf-window.X.manifest" -outputresource:"$(TargetPath)";#2
 
 XCopy "$(TargetPath)" "%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\" /Y /R
