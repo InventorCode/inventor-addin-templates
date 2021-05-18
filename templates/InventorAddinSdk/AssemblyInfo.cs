@@ -7,17 +7,17 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("empty-addin")]
-[assembly: AssemblyDescription("empty-addin")]
+[assembly: AssemblyTitle("InventorAddinSdk")]
+[assembly: AssemblyDescription("description")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Autodesk, Inc.")]
-[assembly: AssemblyProduct("Autodesk Inventor")]
-[assembly: AssemblyCopyright("Copyright ?2012 Autodesk, Inc.")]
+[assembly: AssemblyCompany("company")]
+[assembly: AssemblyProduct("product")]
+[assembly: AssemblyCopyright("copyright")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("532afae8-0941-4eaf-9c60-63dade7626bf")]
+[assembly: Guid("bf24985f-83a0-41d7-a83f-b2d3be1ff212")]
 
 //
 // Version information for an assembly consists of the following four values:
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Revision and Build Numbers
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("0.1.0")]
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the
