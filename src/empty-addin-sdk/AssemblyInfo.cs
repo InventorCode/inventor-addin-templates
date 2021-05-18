@@ -8,11 +8,11 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 //
 [assembly: AssemblyTitle("empty-addin-sdk")]
-[assembly: AssemblyDescription("empty-addin-sdk")]
+[assembly: AssemblyDescription("description")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Autodesk, Inc.")]
-[assembly: AssemblyProduct("Autodesk Inventor")]
-[assembly: AssemblyCopyright("Copyright ?2012 Autodesk, Inc.")]
+[assembly: AssemblyCompany("company")]
+[assembly: AssemblyProduct("product")]
+[assembly: AssemblyCopyright("copyright")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

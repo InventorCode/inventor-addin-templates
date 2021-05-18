@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Matthew D. Jordan",
+    "classifications": ["Desktop"],
+    "name": "Inventor Add-In SDK",
+    "shortName": "invaddin",
+    "default": "InventorAddin",
+    "identity": "jordanrobot.inventor.addin.empty.csharp01",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName":"empty-addin-sdk",
+    "defaultName":"EmptyInventorAddin",
+    "preferNameDirectory": true,
+    "guids": [
+      "bf24985f-83a0-41d7-a83f-b2d3be1ff212"
+    ],
+    "symbols": {
+        "Framework": {
+          "type": "parameter",
+          "description": "The target framework for the project.",
+          "datatype": "choice",
+          "choices": [
+          {
+              "choice": "net48",
+              "description": "Target .NET Framework 4.8"
+          },
+          {
+            "choice": "net47",
+            "description": "Target .NET Framework 4.7"
+         }
+          ],
+          "replaces": "net48",
+          "defaultValue": "net48"
+        },
+        "namespace": {
+          "type": "parameter",
+          "datatype": "text",
+          "description": "Namespace",
+          "replaces": "InvAddin",
+          "defaultValue": "InvAddin"
+        },
+          "description": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Addin description.",
+            "replaces": "description",
+            "defaultValue": ""
+          },
+          "company": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Company Name",
+            "replaces": "company",
+            "defaultValue": ""
+          },
+          "product": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Product",
+            "replaces": "product",
+            "defaultValue": ""
+          },
+          "copyright": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Copyright",
+            "replaces": "copyright",
+            "defaultValue": ""
+          }
+    }
+}

@@ -3,7 +3,7 @@ using Microsoft.Win32;
 using System;
 using System.Runtime.InteropServices;
 
-namespace addin04
+namespace InvAddin
 {
     /// <summary>
     /// This is the primary AddIn Server class that implements the ApplicationAddInServer interface
