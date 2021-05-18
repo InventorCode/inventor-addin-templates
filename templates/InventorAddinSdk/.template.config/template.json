@@ -5,12 +5,12 @@
     "name": "Inventor Add-In SDK",
     "shortName": "invaddin",
     "default": "InventorAddin",
-    "identity": "jordanrobot.inventor.addin.empty.csharp01",
+    "identity": "jordanrobot.InventorAddinSdk.csharp",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "sourceName":"empty-addin-sdk",
+    "sourceName":"InventorAddinSdk",
     "defaultName":"EmptyInventorAddin",
     "preferNameDirectory": true,
     "guids": [

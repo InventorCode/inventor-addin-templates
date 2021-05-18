@@ -10,6 +10,6 @@
 			name="InvAddin.StandardAddInServer"
 			runtimeVersion=""></clrClass>
 
-  <file name="empty-addin-sdk.dll" hashalg="SHA1"></file>
+  <file name="InventorAddinSdk.dll" hashalg="SHA1"></file>
 
 </assembly>
