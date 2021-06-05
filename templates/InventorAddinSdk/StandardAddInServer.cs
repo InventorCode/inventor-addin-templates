@@ -10,7 +10,7 @@ namespace InvAddin
     /// that all Inventor AddIns are required to implement. The communication between Inventor and
     /// the AddIn is via the methods on this interface.
     /// </summary>
-    [GuidAttribute("7678b96c-1af1-4361-9e47-e4d4d209d94d")]
+    [GuidAttribute("BDC7679E-AA6A-4F02-9B53-A93A7D8841D3")]
     public class StandardAddInServer : Inventor.ApplicationAddInServer
     {
 
