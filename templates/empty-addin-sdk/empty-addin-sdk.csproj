@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <RootNamespace>InvAddin</RootNamespace>
-	  <ApplicationManifest>addin.manifest</ApplicationManifest>
+    <ApplicationManifest>addin.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <PropertyGroup>
-    <AssemblyName>SdkAddinTemplate</AssemblyName>
+    <AssemblyName>empty-addin-sdk</AssemblyName>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="SdkAddinTemplate.addin">
+    <None Update="empty-addin-sdk.addin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="addin.manifest">
@@ -28,6 +28,6 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)SdkAddinTemplate.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R)" />
+    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)empty-addin-sdk.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R)" />
   </Target>
 </Project>

@@ -1,11 +1,11 @@
 <Addin Type="Standard">
   <!--Created for Autodesk Inventor Version 25.0-->
-  <ClassId> {0BB08737-B32B-4ED5-AB6B-3B47DC8D4C5C}</ClassId>
-  <ClientId>{0BB08737-B32B-4ED5-AB6B-3B47DC8D4C5C}</ClientId>
-  <DisplayName>SdkAddinTemplate</DisplayName>
+  <ClassId>{3287C9F4-44ED-4D40-81C9-B86AC28F7603}</ClassId>
+  <ClientId>{3287C9F4-44ED-4D40-81C9-B86AC28F7603}</ClientId>
+  <DisplayName>empty-addin-sdk</DisplayName>
   <Description>.NET SDK style project for addins.</Description>
-  <Assembly>SdkAddinTemplate.dll</Assembly>
-  <LoadBehavior>1</LoadBehavior>
+  <Assembly>empty-addin-sdk.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
   <UserUnloadable>1</UserUnloadable>
   <Hidden>0</Hidden>
   <SupportedSoftwareVersionGreaterThan>15..</SupportedSoftwareVersionGreaterThan>

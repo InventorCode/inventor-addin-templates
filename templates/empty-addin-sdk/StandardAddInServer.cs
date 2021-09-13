@@ -12,7 +12,7 @@ namespace InvAddin
     /// the AddIn is via the methods on this interface.
     /// </summary>
     [ProgId("InvAddin.StandardAddinServer")]
-    [GuidAttribute("0BB08737-B32B-4ED5-AB6B-3B47DC8D4C5C")]
+    [GuidAttribute("3287C9F4-44ED-4D40-81C9-B86AC28F7603")]
     public class StandardAddInServer : Inventor.ApplicationAddInServer
     {
 
@@ -33,7 +33,8 @@ namespace InvAddin
 
             // Initialize AddIn members.
             m_inventorApplication = addInSiteObject.Application;
-            MessageBox.Show("hello!");
+
+            MessageBox.Show("Hello!");
             // TODO: Add ApplicationAddInServer.Activate implementation.
             // e.g. event initialization, command creation etc.
         }

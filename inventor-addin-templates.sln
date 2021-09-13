@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SdkAddinTemplate", "templates\InventorAddinSdk\SdkAddinTemplate.csproj", "{96CCDB6E-3E02-4A79-9618-9E7A396271EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "empty-addin-sdk", "templates\empty-addin-sdk\empty-addin-sdk.csproj", "{FFAF333D-1803-433E-84D9-095D6998BA58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96CCDB6E-3E02-4A79-9618-9E7A396271EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFAF333D-1803-433E-84D9-095D6998BA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAF333D-1803-433E-84D9-095D6998BA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAF333D-1803-433E-84D9-095D6998BA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAF333D-1803-433E-84D9-095D6998BA58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
