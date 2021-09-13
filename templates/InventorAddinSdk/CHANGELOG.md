@@ -1,0 +1,4 @@
+﻿BDC7679E-AA6A-4F02-9B53-A93A7D8841D3
+changed to 0BB08737-B32B-4ED5-AB6B-3B47DC8D4C5C
+
+InventorAddinSdk changed to SdkAddinTemplate

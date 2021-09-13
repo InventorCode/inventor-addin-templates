@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>InvAddin</RootNamespace>
+	  <ApplicationManifest>addin.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>SdkAddinTemplate</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Autodesk.Inventor.Interop">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Inventor 2021\Bin\Public Assemblies\Autodesk.Inventor.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SdkAddinTemplate.addin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="addin.manifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)SdkAddinTemplate.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R)" />
+  </Target>
+</Project>

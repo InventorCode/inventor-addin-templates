@@ -2,6 +2,7 @@ using Inventor;
 using Microsoft.Win32;
 using System;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace InvAddin
 {
@@ -10,7 +11,8 @@ namespace InvAddin
     /// that all Inventor AddIns are required to implement. The communication between Inventor and
     /// the AddIn is via the methods on this interface.
     /// </summary>
-    [GuidAttribute("BDC7679E-AA6A-4F02-9B53-A93A7D8841D3")]
+    [ProgId("InvAddin.StandardAddinServer")]
+    [GuidAttribute("0BB08737-B32B-4ED5-AB6B-3B47DC8D4C5C")]
     public class StandardAddInServer : Inventor.ApplicationAddInServer
     {
 
@@ -31,7 +33,7 @@ namespace InvAddin
 
             // Initialize AddIn members.
             m_inventorApplication = addInSiteObject.Application;
-
+            MessageBox.Show("hello!");
             // TODO: Add ApplicationAddInServer.Activate implementation.
             // e.g. event initialization, command creation etc.
         }

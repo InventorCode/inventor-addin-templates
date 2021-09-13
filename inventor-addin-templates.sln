@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventorAddinSdk", "templates\InventorAddinSdk\InventorAddinSdk.csproj", "{96CCDB6E-3E02-4A79-9618-9E7A396271EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SdkAddinTemplate", "templates\InventorAddinSdk\SdkAddinTemplate.csproj", "{96CCDB6E-3E02-4A79-9618-9E7A396271EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

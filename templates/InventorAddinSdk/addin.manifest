@@ -2,14 +2,14 @@
 
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
 
-  <assemblyIdentity name="empty_addin_sdk" version="1.0.0.0"></assemblyIdentity>
+  <assemblyIdentity name="SdkAddinTemplate" version="1.0.0.0"></assemblyIdentity>
 
-  <clrClass clsid="{BDC7679E-AA6A-4F02-9B53-A93A7D8841D3}"
+  <clrClass clsid="{0BB08737-B32B-4ED5-AB6B-3B47DC8D4C5C}"
 			progid="InvAddin.StandardAddInServer"
 			threadingModel="Both"
 			name="InvAddin.StandardAddInServer"
 			runtimeVersion=""></clrClass>
 
-  <file name="InventorAddinSdk.dll" hashalg="SHA1"></file>
+  <file name="SdkAddinTemplate.dll" hashalg="SHA1"></file>
 
 </assembly>
