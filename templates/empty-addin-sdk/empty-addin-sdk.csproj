@@ -9,6 +9,11 @@
   <PropertyGroup>
     <AssemblyName>empty-addin-sdk</AssemblyName>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>addin author</Authors>
+    <Company>company name</Company>
+    <Product>product name</Product>
+    <Description>addin description</Description>
+    <Copyright>copyright text</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

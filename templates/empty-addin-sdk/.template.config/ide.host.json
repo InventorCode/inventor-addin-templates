@@ -10,9 +10,23 @@
           "isVisible": "true"
         },
         {
+          "id": "product",
+          "name": {
+            "text": "Product Name"
+          },
+          "isVisible": "true"
+        },
+        {
           "id": "description",
           "name": {
             "text": "Addin description"
+          },
+          "isVisible": "true"
+        },
+        {
+          "id": "author",
+          "name": {
+            "text": "Author"
           },
           "isVisible": "true"
         },

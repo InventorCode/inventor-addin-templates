@@ -3,7 +3,7 @@
   <ClassId>{3287C9F4-44ED-4D40-81C9-B86AC28F7603}</ClassId>
   <ClientId>{3287C9F4-44ED-4D40-81C9-B86AC28F7603}</ClientId>
   <DisplayName>empty-addin-sdk</DisplayName>
-  <Description>.NET SDK style project for addins.</Description>
+  <Description>Addin description</Description>
   <Assembly>empty-addin-sdk.dll</Assembly>
   <LoadOnStartUp>1</LoadOnStartUp>
   <UserUnloadable>1</UserUnloadable>

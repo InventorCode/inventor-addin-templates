@@ -3,7 +3,7 @@
     "author": "Matthew D. Jordan",
     "classifications": ["Desktop"],
     "name": "Inventor Add-In SDK",
-    "shortName": "invaddin",
+    "shortName": "inv-empty",
     "default": "InventorAddin",
     "identity": "jordanrobot.inventor.addin.empty.csharp01",
     "tags": {
@@ -14,7 +14,7 @@
     "defaultName":"EmptyInventorAddin",
     "preferNameDirectory": true,
     "guids": [
-      "bf24985f-83a0-41d7-a83f-b2d3be1ff212"
+      "3287C9F4-44ED-4D40-81C9-B86AC28F7603"
     ],
     "symbols": {
         "Framework": {
@@ -40,33 +40,40 @@
           "description": "Namespace",
           "replaces": "InvAddin",
           "defaultValue": "InvAddin"
-        },
+          },
+          "product": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Product Name",
+            "replaces": "product name",
+            "defaultValue": ""
+          },
           "description": {
             "type": "parameter",
             "datatype": "text",
-            "description": "Addin description.",
-            "replaces": "description",
+            "description": "Addin Description",
+            "replaces": "addin description",
             "defaultValue": ""
           },
           "company": {
             "type": "parameter",
             "datatype": "text",
             "description": "Company Name",
-            "replaces": "company",
+            "replaces": "company name",
             "defaultValue": ""
           },
-          "product": {
+          "author": {
             "type": "parameter",
             "datatype": "text",
-            "description": "Product",
-            "replaces": "product",
+            "description": "Author",
+            "replaces": "author name",
             "defaultValue": ""
           },
           "copyright": {
             "type": "parameter",
             "datatype": "text",
             "description": "Copyright",
-            "replaces": "copyright",
+            "replaces": "copyright text",
             "defaultValue": ""
           }
     }
