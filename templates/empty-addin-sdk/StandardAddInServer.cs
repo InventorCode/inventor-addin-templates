@@ -34,7 +34,7 @@ namespace InvAddin
             // Initialize AddIn members.
             m_inventorApplication = addInSiteObject.Application;
 
-            MessageBox.Show("Hello!");
+            // MessageBox.Show("Hello!");
             // TODO: Add ApplicationAddInServer.Activate implementation.
             // e.g. event initialization, command creation etc.
         }
