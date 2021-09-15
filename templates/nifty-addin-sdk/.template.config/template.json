@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Matthew D. Jordan",
+    "classifications": ["Desktop"],
+    "name": "Inventor NiftyPort Add-In (SDK)",
+    "shortName": "inv-nifty",
+    "default": "InventorAddin",
+    "identity": "InventorCode.addin.niftyport.csharp01",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName":"nifty-addin-sdk",
+    "defaultName":"NiftyInventorAddin",
+    "preferNameDirectory": true,
+    "guids": [
+      "97335E20-6FC6-4BA9-8862-441B9376CB0C"
+    ],
+    "symbols": {
+        "Framework": {
+          "type": "parameter",
+          "description": "The target framework for the project.",
+          "datatype": "choice",
+          "choices": [
+          {
+              "choice": "net48",
+              "description": "Target .NET Framework 4.8"
+          },
+          {
+            "choice": "net47",
+            "description": "Target .NET Framework 4.7"
+         }
+          ],
+          "replaces": "net48",
+          "defaultValue": "net48"
+        },
+        "namespace": {
+          "type": "parameter",
+          "datatype": "text",
+          "description": "Namespace",
+          "replaces": "InvAddin",
+          "defaultValue": "InvAddin"
+          },
+          "product": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Product Name",
+            "replaces": "product name",
+            "defaultValue": ""
+          },
+          "description": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Addin Description",
+            "replaces": "addin description",
+            "defaultValue": ""
+          },
+          "company": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Company Name",
+            "replaces": "company name",
+            "defaultValue": ""
+          },
+          "author": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Author",
+            "replaces": "author name",
+            "defaultValue": ""
+          },
+          "copyright": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Copyright",
+            "replaces": "copyright text",
+            "defaultValue": ""
+          }
+    }
+}

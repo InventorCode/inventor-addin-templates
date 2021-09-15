@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="nifty_addin_sdk" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{97335E20-6FC6-4BA9-8862-441B9376CB0C}"
+			progid="InvAddin.StandardAddInServer"
+			threadingModel="Both"
+			name="InvAddin.StandardAddInServer"
+			runtimeVersion=""></clrClass>
+
+  <file name="nifty-addin-sdk.dll" hashalg="SHA1"></file>
+
+</assembly>

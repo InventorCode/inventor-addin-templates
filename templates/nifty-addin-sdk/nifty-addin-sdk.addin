@@ -1,0 +1,14 @@
+<Addin Type="Standard">
+  <!--Created for Autodesk Inventor Version 25.0-->
+  <ClassId>{97335E20-6FC6-4BA9-8862-441B9376CB0C}</ClassId>
+  <ClientId>{97335E20-6FC6-4BA9-8862-441B9376CB0C}</ClientId>
+  <DisplayName>nifty-addin-sdk</DisplayName>
+  <Description>Addin description</Description>
+  <Assembly>nifty-addin-sdk.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>15..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>

@@ -1,0 +1,1 @@
+This is a port of [Brian Ekin's](https://github.com/brianekins?tab=repositories) VB.Net Nifty Inventor Add-in template.  You can read more about it at his [site](https://ekinssolutions.com/nifty_addin_template/).
