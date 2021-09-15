@@ -5,7 +5,7 @@
     "name": "Inventor Add-In SDK",
     "shortName": "inv-empty",
     "default": "InventorAddin",
-    "identity": "jordanrobot.inventor.addin.empty.csharp01",
+    "identity": "InventorCode.addin.empty.csharp01",
     "tags": {
         "language": "C#",
         "type": "project"
