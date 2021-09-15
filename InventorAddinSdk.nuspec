@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>jordanrobot.InventorAddin.Templates</id>
-    <version>0.0.5</version>
+    <id>InventorCode.AddinTemplates</id>
+    <version>0.2.0</version>
     <description>
       Customizable Autodesk Inventor add-in templates for the dotnet new templating engine.
     </description>
-    <authors>Matthew D. Jordan</authors>
+    <authors>InventorCode</authors>
     <license type="expression">Apache-2.0</license>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
     <icon>icon.png</icon>
-    <projectUrl>https://github.com/jordanrobot/inventor-addin-templates</projectUrl>
+    <projectUrl>https://github.com/InventorCode/inventor-addin-templates</projectUrl>
   </metadata>
   <files>
     <file src="templates\**\*.*" exclude="templates\**\bin\**;templates\**\obj\**;*.nuspec" target="content" />
