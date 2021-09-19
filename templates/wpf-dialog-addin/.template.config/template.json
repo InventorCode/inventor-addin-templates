@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Matthew D. Jordan",
+    "classifications": ["Desktop"],
+    "name": "Inventor WPF Dialog Add-In (SDK)",
+    "shortName": "inv-wpf-dialog",
+    "default": "InventorAddin",
+    "identity": "InventorCode.addin.wpfdialog.csharp01",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName":"wpf-dialog-addin",
+    "defaultName":"NiftyInventorAddin",
+    "preferNameDirectory": true,
+    "guids": [
+      "05D13420-B80E-4021-97B8-A3A8934A5731"
+    ],
+    "symbols": {
+        "Framework": {
+          "type": "parameter",
+          "description": "The target framework for the project.",
+          "datatype": "choice",
+          "choices": [
+          {
+              "choice": "net48",
+              "description": "Target .NET Framework 4.8"
+          },
+          {
+            "choice": "net47",
+            "description": "Target .NET Framework 4.7"
+         }
+          ],
+          "replaces": "net48",
+          "defaultValue": "net48"
+        },
+        "namespace": {
+          "type": "parameter",
+          "datatype": "text",
+          "description": "Namespace",
+          "replaces": "InvAddin",
+          "defaultValue": "InvAddin"
+          },
+          "product": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Product Name",
+            "replaces": "product name",
+            "defaultValue": ""
+          },
+          "description": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Addin Description",
+            "replaces": "addin description",
+            "defaultValue": ""
+          },
+          "company": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Company Name",
+            "replaces": "company name",
+            "defaultValue": ""
+          },
+          "author": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Author",
+            "replaces": "author name",
+            "defaultValue": ""
+          },
+          "copyright": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Copyright",
+            "replaces": "copyright text",
+            "defaultValue": ""
+          }
+    }
+}
