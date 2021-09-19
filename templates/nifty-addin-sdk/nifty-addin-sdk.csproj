@@ -35,6 +35,6 @@
     </None>
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)nifty-addin-sdk.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R)" />
+    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)nifty-addin-sdk.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)Resources\&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\Resources\&quot; /E /H /C /I&#xD;&#xA;)" />
   </Target>
 </Project>
