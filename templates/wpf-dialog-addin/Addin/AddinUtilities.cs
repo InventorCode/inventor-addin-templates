@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace InvAddin
+namespace InvAddin.Addin
 {
     public static class AddinUtilities
     {

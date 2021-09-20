@@ -1,8 +1,9 @@
+using InvAddin.Addin;
 using Inventor;
 using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Windows.Forms;
+using System.Windows.Interop;
 
 namespace InvAddin
 {
@@ -85,13 +86,24 @@ namespace InvAddin
                 // Link button clicks to their respective commands.
                 switch (bd.InternalName)
                 {
-                    case "dw_NewWithPathFromPart":
-                        MessageBox.Show(Globals.invApp.ActiveDocument.DisplayName);
+                    case "hello-world-button":
+                        ShowMainWindow();
                         return;
 
                     default:
                         return;
                 }
+            }
+
+            private void ShowMainWindow()
+            {
+                var mainWindow = new Views.MainWindow();
+
+                //could be a good idea to set the owner for this window, esp. if it's used in a modeless way...
+                var helper = new WindowInteropHelper(mainWindow);
+                helper.Owner = new IntPtr(Globals.invApp.MainFrameHWND);
+
+                mainWindow.ShowDialog();
             }
         }
 
@@ -129,7 +141,7 @@ namespace InvAddin
                 // ButtonName = create_button(display_text, internal_name, icon_path)
                 CreateButton create_button = new CreateButton(button_template);
 
-                Button01 = create_button("This is Display Text", "internal_name", @"Resources\Buttons\SampleIcon");
+                Button01 = create_button("Hello World", "hello-world-button", @"Resources\Buttons\SampleIcon");
 
                 // Add to the user interface, if it's the first time.
                 // If this add-in doesn't have a UI but runs in the background listening
@@ -141,7 +153,7 @@ namespace InvAddin
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unexpected failure in the activation of the add-in... " + System.Environment.NewLine + System.Environment.NewLine + ex.Message);
+                throw new SystemException("Unexpected failure in the activation of the add-in... " + System.Environment.NewLine + System.Environment.NewLine + ex.Message);
             }
         }
 
