@@ -2,9 +2,9 @@
   <!--Created for Autodesk Inventor Version 25.0-->
   <ClassId>{05D13420-B80E-4021-97B8-A3A8934A5731}</ClassId>
   <ClientId>{05D13420-B80E-4021-97B8-A3A8934A5731}</ClientId>
-  <DisplayName>wpf-dialog-addin</DisplayName>
+  <DisplayName>wpf-window-addin</DisplayName>
   <Description>Addin description</Description>
-  <Assembly>wpf-dialog-addin.dll</Assembly>
+  <Assembly>wpf-window-addin.dll</Assembly>
   <LoadOnStartUp>1</LoadOnStartUp>
   <UserUnloadable>1</UserUnloadable>
   <Hidden>0</Hidden>

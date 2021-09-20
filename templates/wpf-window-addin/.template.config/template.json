@@ -2,16 +2,16 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Matthew D. Jordan",
     "classifications": ["Desktop"],
-    "name": "Inventor WPF Dialog Add-In (SDK)",
-    "shortName": "inv-wpf-dialog",
+    "name": "Inventor WPF window Add-In (SDK)",
+    "shortName": "inv-wpf",
     "default": "InventorAddin",
-    "identity": "InventorCode.addin.wpfdialog.csharp01",
+    "identity": "InventorCode.addin.wpf.csharp01",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "sourceName":"wpf-dialog-addin",
-    "defaultName":"NiftyInventorAddin",
+    "sourceName":"wpf-window-addin",
+    "defaultName":"WpfWindowAddin",
     "preferNameDirectory": true,
     "guids": [
       "05D13420-B80E-4021-97B8-A3A8934A5731"

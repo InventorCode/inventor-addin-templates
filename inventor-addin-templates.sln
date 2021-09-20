@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "empty-addin-sdk", "template
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nifty-addin-sdk", "templates\nifty-addin-sdk\nifty-addin-sdk.csproj", "{EA0563A3-9787-4DD0-9240-BF0B19364129}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf-dialog-addin", "templates\wpf-dialog-addin\wpf-dialog-addin.csproj", "{6ACE9F63-7424-47C8-9724-C5DB14489DFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf-window-addin", "templates\wpf-window-addin\wpf-window-addin.csproj", "{6ACE9F63-7424-47C8-9724-C5DB14489DFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

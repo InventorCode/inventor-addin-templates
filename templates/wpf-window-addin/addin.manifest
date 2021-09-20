@@ -2,7 +2,7 @@
 
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
 
-  <assemblyIdentity name="wpf_dialog_addin" version="1.0.0.0"></assemblyIdentity>
+  <assemblyIdentity name="wpf_window_addin" version="1.0.0.0"></assemblyIdentity>
 
   <clrClass clsid="{05D13420-B80E-4021-97B8-A3A8934A5731}"
 			progid="InvAddin.StandardAddInServer"
@@ -10,6 +10,6 @@
 			name="InvAddin.StandardAddInServer"
 			runtimeVersion=""></clrClass>
 
-  <file name="wpf-dialog-addin.dll" hashalg="SHA1"></file>
+  <file name="wpf-window-addin.dll" hashalg="SHA1"></file>
 
 </assembly>

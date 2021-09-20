@@ -10,7 +10,7 @@
     <Version>0.2.0</Version>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyName>wpf-dialog-addin</AssemblyName>
+    <AssemblyName>wpf-window-addin</AssemblyName>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>addin author</Authors>
     <Company></Company>
@@ -40,6 +40,6 @@
     </None>
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)wpf-dialog-addin.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)Resources\&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\Resources\&quot; /E /H /C /I&#xD;&#xA;)" />
+    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)wpf-window-addin.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)Resources\&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\Resources\&quot; /E /H /C /I&#xD;&#xA;)" />
   </Target>
 </Project>
