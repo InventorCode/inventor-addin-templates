@@ -1,1 +1,0 @@
-nuget push nupkg/InventorCode.AddinTemplates.0.2.0.nupkg <APIKEY> -Source https://api.nuget.org/v3/index.json
