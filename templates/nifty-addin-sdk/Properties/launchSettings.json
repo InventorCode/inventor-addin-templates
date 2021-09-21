@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "nifty-addin-sdk": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Autodesk\\Inventor 2021\\Bin\\Inventor.exe"
+    }
+  }
+}
