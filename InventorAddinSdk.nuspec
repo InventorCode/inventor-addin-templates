@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>InventorCode.AddinTemplates</id>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <description>
       Customizable Autodesk Inventor add-in templates for the dotnet new templating engine.
     </description>
@@ -13,6 +13,20 @@
     </packageTypes>
     <icon>icon.png</icon>
     <projectUrl>https://github.com/InventorCode/inventor-addin-templates</projectUrl>
+	<releaseNotes>
+		## [0.3.0](https://www.nuget.org/packages/InventorCode.AddinTemplates/)
+
+		### Added
+
+		- CHANGELOG.md
+		- WPF window addin template `inv-wpf`
+		- Inventor (2021) set as Debug executable for all templates.
+
+		### Fixed
+
+		- nifty-addin-sdk build event copies the Resources folder into the user's Autodesk Addins directory during Debug builds.
+		- nifty-addin-sdk was added to the inventor-addin-templates VS solution.
+	</releaseNotes>
   </metadata>
   <files>
     <file src="templates\**\*.*" exclude="templates\**\bin\**;templates\**\obj\**;*.nuspec" target="content" />
