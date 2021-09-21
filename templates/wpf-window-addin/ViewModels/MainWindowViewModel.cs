@@ -1,29 +1,29 @@
-﻿using InvAddin;
-using System;
-using System.Threading.Tasks;
+﻿using System;
+using System.Windows.Input;
 
 namespace InvAddin.ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {
-        public event EventHandler OnRequestClose;
+        public ICommand CustomCommand { get; set; }
+        public ICommand CloseCommand { get; set; }
+        public Action CloseAction { get; set; } //assign Window.Close() to this Action in the View
 
-        private string greeting = "Hello World!";
-        public string Greeting
+        public MainWindowViewModel()
         {
-            get { return greeting; }
-            set
-            {
-                greeting = value;
-                NotifyPropertyChanged("ExportFileName");
-            }
+            CustomCommand = new RelayCommand(o => GreetingText = "Goodbye!", o => true);
+            CloseCommand = new RelayCommand(o => CloseAction(), o => true);
         }
 
-        public MainWindowViewModel() { }
-
-        public void WindowClose()
+        private string _greetingText = "Hello World!";
+        public string GreetingText
         {
-            OnRequestClose(this, new EventArgs());
+            get { return _greetingText; }
+            set
+            {
+                _greetingText = value;
+                NotifyPropertyChanged("GreetingText");
+            }
         }
     }
 }
