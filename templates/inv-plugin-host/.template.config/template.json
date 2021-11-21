@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Matthew D. Jordan",
+    "classifications": ["Desktop"],
+    "name": "Inventor Add-In PluginHost",
+    "shortName": "inv-pluginhost",
+    "default": "InventorAddin",
+    "identity": "InventorCode.addin.pluginhost.cs",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName":"inv-plugin-host",
+    "defaultName":"AddinPluginHost",
+    "preferNameDirectory": true,
+    "guids": [
+      "B76D3C5A-C5BD-4560-A532-5E047C84E596"
+    ],
+    "symbols": {
+        "namespace": {
+          "type": "parameter",
+          "datatype": "text",
+          "description": "Namespace",
+          "replaces": "InvAddin",
+          "defaultValue": "InvAddin"
+          },
+          "product": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Product Name",
+            "replaces": "product name",
+            "defaultValue": ""
+          },
+          "description": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Addin Description",
+            "replaces": "addin description",
+            "defaultValue": ""
+          },
+          "company": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Company Name",
+            "replaces": "company name",
+            "defaultValue": ""
+          },
+          "author": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Author",
+            "replaces": "author name",
+            "defaultValue": ""
+          },
+          "copyright": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Copyright",
+            "replaces": "copyright text",
+            "defaultValue": ""
+          }
+    }
+}

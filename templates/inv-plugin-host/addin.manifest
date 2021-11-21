@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="inv_plugin_host" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{B76D3C5A-C5BD-4560-A532-5E047C84E596}"
+			progid="InvAddin.StandardAddInServer"
+			threadingModel="Both"
+			name="InvAddin.StandardAddInServer"
+			runtimeVersion=""></clrClass>
+
+  <file name="inv-plugin-host.dll" hashalg="SHA1"></file>
+
+</assembly>
