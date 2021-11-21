@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Matthew D. Jordan",
+    "classifications": ["Desktop"],
+    "name": "Inventor Addin Plugin",
+    "shortName": "inv-plugin",
+    "default": "InventorAddinPlugin",
+    "identity": "InventorCode.addin.plugin.cs",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName":"inv-plugin",
+    "defaultName":"InventorAddinPlugin",
+    "preferNameDirectory": true,
+    "symbols": {
+      "host-name":{
+        "type": "parameter",
+        "datatype": "text",
+        "description": "PluginHost name (used to place assemblies in the correct directory for debug testing).",
+        "replaces": "inv-plugin-host",
+        "defaultValue": "inv-plugin-host"
+      },
+        "namespace": {
+          "type": "parameter",
+          "datatype": "text",
+          "description": "Namespace",
+          "replaces": "InvAddinPlugin",
+          "defaultValue": "InvAddinPlugin"
+          },
+          "product": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Product Name",
+            "replaces": "Product Name",
+            "defaultValue": ""
+          },
+          "description": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Plugin Description",
+            "replaces": "Plugin description",
+            "defaultValue": ""
+          },
+          "company": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Company Name",
+            "replaces": "Company Name",
+            "defaultValue": ""
+          },
+          "author": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Author",
+            "replaces": "Author",
+            "defaultValue": ""
+          },
+          "copyright": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Copyright",
+            "replaces": "copyright text",
+            "defaultValue": ""
+          }
+    }
+}
