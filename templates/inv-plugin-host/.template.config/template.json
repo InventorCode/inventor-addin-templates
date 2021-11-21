@@ -2,7 +2,7 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Matthew D. Jordan",
     "classifications": ["Desktop"],
-    "name": "Inventor Add-In PluginHost",
+    "name": "Inventor Addin PluginHost",
     "shortName": "inv-pluginhost",
     "default": "InventorAddin",
     "identity": "InventorCode.addin.pluginhost.cs",

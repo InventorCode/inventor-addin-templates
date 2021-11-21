@@ -2,7 +2,7 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Matthew D. Jordan",
     "classifications": ["Desktop"],
-    "name": "Inventor WPF window Add-In (SDK)",
+    "name": "Inventor WPF window Addin (SDK)",
     "shortName": "inv-wpf",
     "default": "InventorAddin",
     "identity": "InventorCode.addin.wpf.csharp01",
