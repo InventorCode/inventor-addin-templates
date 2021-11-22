@@ -2,71 +2,58 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Matthew D. Jordan",
     "classifications": ["Desktop"],
-    "name": "Inventor WPF window Addin (SDK)",
-    "shortName": "inv-wpf",
-    "default": "InventorAddin",
-    "identity": "InventorCode.addin.wpf.csharp01",
+    "name": "Inventor Addin Plugin",
+    "shortName": "inv-plugin",
+    "default": "InventorAddinPlugin",
+    "identity": "InventorCode.addin.plugin.cs",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "sourceName":"wpf-window-addin",
-    "defaultName":"WpfWindowAddin",
+    "sourceName":"inv-plugin",
+    "defaultName":"InventorAddinPlugin",
     "preferNameDirectory": true,
-    "guids": [
-      "05D13420-B80E-4021-97B8-A3A8934A5731"
-    ],
     "symbols": {
-        "Framework": {
-          "type": "parameter",
-          "description": "The target framework for the project.",
-          "datatype": "choice",
-          "choices": [
-          {
-              "choice": "net48",
-              "description": "Target .NET Framework 4.8"
-          },
-          {
-            "choice": "net47",
-            "description": "Target .NET Framework 4.7"
-         }
-          ],
-          "replaces": "net48",
-          "defaultValue": "net48"
-        },
+      "host-name":{
+        "type": "parameter",
+        "datatype": "text",
+        "description": "PluginHost name (used to place assemblies in the correct directory for debug testing).",
+        "replaces": "inv-plugin-host",
+        "defaultValue": "inv-plugin-host"
+      },
         "namespace": {
           "type": "parameter",
           "datatype": "text",
           "description": "Namespace",
-          "replaces": "InvAddin",
-          "defaultValue": "InvAddin"
+          "replaces": "InvAddinPlugin",
+          "defaultValue": "InvAddinPlugin"
           },
           "product": {
             "type": "parameter",
             "datatype": "text",
             "description": "Product Name",
-            "replaces": "product name",
+            "replaces": "Product Name",
             "defaultValue": ""
           },
           "description": {
             "type": "parameter",
             "datatype": "text",
-            "description": "Addin Description",
-            "replaces": "addin description",
+            "description": "Plugin Description",
+            "replaces": "Plugin description",
             "defaultValue": ""
           },
           "company": {
             "type": "parameter",
             "datatype": "text",
             "description": "Company Name",
-            "replaces": "company name",
+            "replaces": "Company Name",
             "defaultValue": ""
           },
           "author": {
             "type": "parameter",
             "datatype": "text",
-            "description": "Author",
-            "replaces": "author name",
+            "description": "Author Name",
+            "replaces": "Author Name",
             "defaultValue": ""
           },
           "copyright": {

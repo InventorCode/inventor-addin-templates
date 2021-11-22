@@ -1,0 +1,14 @@
+<Addin Type="Standard">
+  <!--Created for Autodesk Inventor Version 25.0-->
+  <ClassId>{B76D3C5A-C5BD-4560-A532-5E047C84E596}</ClassId>
+  <ClientId>{B76D3C5A-C5BD-4560-A532-5E047C84E596}</ClientId>
+  <DisplayName>inv-plugin-host</DisplayName>
+  <Description>Addin description</Description>
+  <Assembly>inv-plugin-host.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>15..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>

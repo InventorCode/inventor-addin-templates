@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>InvAddinPlugin</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>inv-plugin</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Author Name</Authors>
+    <Company>Company Name</Company>
+    <Product>Product Name</Product>
+    <Description>Plugin description</Description>
+    <Copyright>copyright text</Copyright>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>../../artifacts/Plugins</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>../../artifacts/Plugins</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
+		<IsPublishable>True</IsPublishable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="InventorCode.Plugin" Version="0.4.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Autodesk.Inventor.Interop">
+			<HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Inventor 2021\Bin\Public Assemblies\Autodesk.Inventor.Interop.dll</HintPath>
+			<CopyLocal>False</CopyLocal>
+			<EmbedInteropTypes>False</EmbedInteropTypes>
+		</Reference>
+		<Reference Include="System.ComponentModel.Composition">
+		  <CopyLocal>False</CopyLocal>
+		</Reference>
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\inv-plugin-host\Plugins\&quot; /Y /R)" />
+	</Target>
+
+</Project>

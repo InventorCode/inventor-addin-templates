@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>InvAddin</RootNamespace>
+    <ApplicationManifest>addin.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>inv-plugin-host</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>addin author</Authors>
+    <Company></Company>
+    <Product></Product>
+    <Description></Description>
+    <Copyright></Copyright>
+  </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>../../artifacts</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>../../artifacts</OutputPath>
+		<GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="InventorCode.Plugin" Version="0.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Autodesk.Inventor.Interop">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Inventor 2021\Bin\Public Assemblies\Autodesk.Inventor.Interop.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+	  
+    <Reference Include="System.ComponentModel.Composition">
+      <CopyLocal>True</CopyLocal>
+		<Private>true</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="inv-plugin-host.addin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="addin.manifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if $(ConfigurationName)==Debug (&#xD;&#xA;XCopy &quot;$(TargetPath)&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(ProjectDir)inv-plugin-host.addin&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y /R&#xD;&#xA;XCopy &quot;$(TargetDir)InventorCode.Plugin.dll&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y&#xD;&#xA;XCopy &quot;$(TargetDir)System.ComponentModel.Composition.dll&quot; &quot;%25AppData%25\Autodesk\ApplicationPlugins\$(TargetName)\&quot; /Y&#xD;&#xA;)" />
+  </Target>
+</Project>

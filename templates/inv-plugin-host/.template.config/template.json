@@ -2,38 +2,21 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Matthew D. Jordan",
     "classifications": ["Desktop"],
-    "name": "Inventor WPF window Addin (SDK)",
-    "shortName": "inv-wpf",
+    "name": "Inventor Addin PluginHost",
+    "shortName": "inv-pluginhost",
     "default": "InventorAddin",
-    "identity": "InventorCode.addin.wpf.csharp01",
+    "identity": "InventorCode.addin.pluginhost.cs",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "sourceName":"wpf-window-addin",
-    "defaultName":"WpfWindowAddin",
+    "sourceName":"inv-plugin-host",
+    "defaultName":"AddinPluginHost",
     "preferNameDirectory": true,
     "guids": [
-      "05D13420-B80E-4021-97B8-A3A8934A5731"
+      "B76D3C5A-C5BD-4560-A532-5E047C84E596"
     ],
     "symbols": {
-        "Framework": {
-          "type": "parameter",
-          "description": "The target framework for the project.",
-          "datatype": "choice",
-          "choices": [
-          {
-              "choice": "net48",
-              "description": "Target .NET Framework 4.8"
-          },
-          {
-            "choice": "net47",
-            "description": "Target .NET Framework 4.7"
-         }
-          ],
-          "replaces": "net48",
-          "defaultValue": "net48"
-        },
         "namespace": {
           "type": "parameter",
           "datatype": "text",

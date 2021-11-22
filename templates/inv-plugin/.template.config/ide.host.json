@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json.schemastore.org/vs-2017.3.host",
+  "icon": "icon.png",
+  "symbolInfo": [
+    {
+      "id": "namespace",
+      "name": {
+        "text": "Default namespace"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "host-name",
+      "name": {
+        "text": "inv-plugin-host"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "product",
+      "name": {
+        "text": "Product Name"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "description",
+      "name": {
+        "text": "Addin description"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "author",
+      "name": {
+        "text": "Author Name"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "company",
+      "name": {
+        "text": "Company Name"
+      },
+      "isVisible": "true"
+    }
+  ]
+}

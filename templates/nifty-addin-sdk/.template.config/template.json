@@ -2,7 +2,7 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Matthew D. Jordan",
     "classifications": ["Desktop"],
-    "name": "Inventor NiftyPort Add-In (SDK)",
+    "name": "Inventor NiftyPort Addin (SDK)",
     "shortName": "inv-nifty",
     "default": "InventorAddin",
     "identity": "InventorCode.addin.niftyport.csharp01",
