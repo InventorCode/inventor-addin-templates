@@ -27,11 +27,11 @@
 
 	<PropertyGroup>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
 	</PropertyGroup>
 	
   <ItemGroup>
-    <PackageReference Include="InventorCode.Plugin" Version="0.4.0" />
+    <PackageReference Include="InventorCode.Plugin" Version="0.4.2" />
   </ItemGroup>
 
   <ItemGroup>

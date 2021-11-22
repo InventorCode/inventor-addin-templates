@@ -52,8 +52,8 @@
           "author": {
             "type": "parameter",
             "datatype": "text",
-            "description": "Author",
-            "replaces": "Author",
+            "description": "Author Name",
+            "replaces": "Author Name",
             "defaultValue": ""
           },
           "copyright": {

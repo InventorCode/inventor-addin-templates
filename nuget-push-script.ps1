@@ -1,1 +1,1 @@
-nuget push nupkg/InventorCode.AddinTemplates.0.3.0.nupkg -Source https://api.nuget.org/v3/index.json
+nuget push nupkg/InventorCode.AddinTemplates.0.4.0.nupkg -Source https://api.nuget.org/v3/index.json

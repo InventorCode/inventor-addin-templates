@@ -8,7 +8,7 @@
   <PropertyGroup>
     <AssemblyName>inv-plugin</AssemblyName>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Authors>Author</Authors>
+    <Authors>Author Name</Authors>
     <Company>Company Name</Company>
     <Product>Product Name</Product>
     <Description>Plugin description</Description>
@@ -25,12 +25,12 @@
 
 	<PropertyGroup>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
 		<IsPublishable>True</IsPublishable>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="InventorCode.Plugin" Version="0.4.0" />
+		<PackageReference Include="InventorCode.Plugin" Version="0.4.2" />
 	</ItemGroup>
 
 	<ItemGroup>

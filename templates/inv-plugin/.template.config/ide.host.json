@@ -33,7 +33,7 @@
     {
       "id": "author",
       "name": {
-        "text": "Author"
+        "text": "Author Name"
       },
       "isVisible": "true"
     },

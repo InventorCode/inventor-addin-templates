@@ -1,10 +1,10 @@
 ## inventor-addin-templates
 
-A collection of Autodesk Inventor addin templates that use the dotnet new templating engine. This means the templates are always ready to build, and are simpler to configure and create than the older visual studio style templates. Depsite using the dotnet new templating engine, the addins are targeted towards .Net Framework 4.7 & 4.8, though that can be further configured after creation.
+A collection of Autodesk Inventor addin templates that use the dotnet new templating engine. This means the templates are always ready to build, and are simpler to configure and create than the older visual studio style templates. Despite using the dotnet new templating engine, the addins are targeted towards .Net Framework 4.7 & 4.8, though that can be further configured after creation.
 
 ### Installation
 
-Install the nuget package by running the simple command [here](https://www.nuget.org/packages/InventorCode.AddinTemplates/)
+Install the nuget template package by running the simple command [here](https://www.nuget.org/packages/InventorCode.AddinTemplates/)
 
 ### Creation
 
@@ -17,6 +17,9 @@ To create a new empty addin, enter the following command in a command line termi
   - `inv-empty` Empty Inventor addin template.
   - `inv-nifty` A port of Brian Ekin's VB.net Nifty Addin template.
   - `inv-wpf` A simple [MVVM] WPF addin template.
+  - `inv-pluginhost` A PluginHost addin using MEF; this is the "main" addin for the plugin type.
+  - `inv-plugin` A Plugin for use in with the PluginHost addin; this is loaded into the PluginHost addin dynamically.
+  
 - You can enable these templates in Visual Studio 2019 if you have "Show All .NET CLI templates" enabled in Options > General > Preview Features.
 
 ### Dependencies
