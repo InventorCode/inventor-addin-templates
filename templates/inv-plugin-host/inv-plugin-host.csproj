@@ -31,7 +31,7 @@
 	</PropertyGroup>
 	
   <ItemGroup>
-    <PackageReference Include="InventorCode.Plugin" Version="0.4.2" />
+    <PackageReference Include="InventorCode.Plugin" Version="0.6.0" />
   </ItemGroup>
 
   <ItemGroup>
