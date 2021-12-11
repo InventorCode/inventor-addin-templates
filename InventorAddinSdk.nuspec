@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>InventorCode.AddinTemplates</id>
-    <version>0.4.0</version>
+    <version>0.4.1</version>
     <description>
       Customizable Autodesk Inventor add-in templates for the dotnet new templating engine.
     </description>
@@ -14,12 +14,11 @@
     <icon>icon.png</icon>
     <projectUrl>https://github.com/InventorCode/inventor-addin-templates</projectUrl>
 	<releaseNotes>
-		## [0.4.0](https://www.nuget.org/packages/InventorCode.AddinTemplates/)
+		## [0.4.1](https://www.nuget.org/packages/InventorCode.AddinTemplates/)
 
-		### Added
+		### Fix
 
-		- inv-pluginhost template
-    - inv-plugin template
+		- inv-plugin and inv-pluginhost updated to use InventorCode.Plugin 0.6.0
 	</releaseNotes>
   </metadata>
   <files>

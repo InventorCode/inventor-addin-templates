@@ -1,10 +1,8 @@
 using Inventor;
-using Microsoft.Win32;
-using System;
-using System.Runtime.InteropServices;
-using System.Windows.Forms;
 using InventorCode.Plugin;
 using System.ComponentModel.Composition;
+using System.Reflection;
+using System.Windows.Forms;
 
 namespace InvAddinPlugin
 {
@@ -24,6 +22,8 @@ namespace InvAddinPlugin
         private Inventor.Application _inventorApplication;
         private string _clientId;
 
+        #region IPlugin Members
+
         public void Activate(Inventor.Application InventorApplication, string ClientId, bool firstTime = true)
         {
             _inventorApplication = InventorApplication;
@@ -39,5 +39,13 @@ namespace InvAddinPlugin
         public void Execute()
         {
         }
+
+        public CommandControl ExecuteSettings { get; set; }
+
+        public string Name { get => Assembly.GetExecutingAssembly().GetName().Name; }
+
+        public string Version { get => Assembly.GetExecutingAssembly().GetName().Version.ToString(); }
+
+        #endregion IPlugin Members
     }
 }
